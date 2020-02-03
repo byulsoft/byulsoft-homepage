@@ -86,15 +86,15 @@ $('.copy').click(function(){
 });
 
 //scroll
-$(".scrl").mCustomScrollbar({
-    axis:"y",
-    theme:"light",
-    autoExpandScrollbar:true,
-    advanced:{autoExpandHorizontalScroll:true},
-    setWidth: "100%",
-    setHeight: "1050",
-    // scrollButtons:{ enable: true }
-});
+// $(".scrl").mCustomScrollbar({
+//     axis:"y",
+//     theme:"light",
+//     autoExpandScrollbar:true,
+//     advanced:{autoExpandHorizontalScroll:true},
+//     setWidth: "100%",
+//     setHeight: "1050",
+//     // scrollButtons:{ enable: true }
+// });
 
 //carousel data //작동은 되는데 효과에 영향줘서 안씀
 // const carousels = [
@@ -265,15 +265,15 @@ const members = [
         'memberName': '이병준'
     },
     {
-        'memberImage': 'images/noone.svg',
+        'memberImage': 'images/kskim.jpg',
         'memberName': '김경성'
     },
     {
-        'memberImage': 'images/noone.svg',
+        'memberImage': 'images/sypark.jpg',
         'memberName': '박송이'
     },
     {
-        'memberImage': 'images/noone.svg',
+        'memberImage': 'images/jhlim.jpg',
         'memberName': '임지혜'
     },
     {

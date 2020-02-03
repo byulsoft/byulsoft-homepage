@@ -151,7 +151,7 @@ hr{width:75%; margin:auto;}
 }
 .member .card{border:1px solid rgba(255,255,255,0.4); background:none; box-shadow: 0px 0px 12px rgba(0,0,0,0.2);}
 .member .card img{border-radius: 50%;}
-.scrl{padding-top:50px; overflow: auto;}
+/*.scrl{padding-top:50px; overflow: auto;}*/
 
 /*--------timeline--------*/
 .work{
