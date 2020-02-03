@@ -85,76 +85,8 @@ $('.copy').click(function(){
     $(this).fadeIn();
 });
 
-//scroll
-$(".scrl").mCustomScrollbar({
-    axis:"y",
-    theme:"light",
-    autoExpandScrollbar:true,
-    advanced:{autoExpandHorizontalScroll:true},
-    setWidth: "100%",
-    setHeight: "1050",
-    // scrollButtons:{ enable: true }
-});
-
-//carousel data //작동은 되는데 효과에 영향줘서 안씀
-// const carousels = [
-//     {
-//         'carouselsImage': 'images/slide_devops.jpg',
-//         'carouselTitle': 'Agile x DevOps',
-//         'carouselText': 'Agile과 DevOps를 접목한 프로그래밍 방식으로<br>더 정확하고, 더 안전하고, 더 신속하게'
-//     },
-//     {
-//         'carouselsImage': 'images/slide_devops.jpg',
-//         'carouselTitle': 'Agile x DevOps',
-//         'carouselText': 'Agile과 DevOps를 접목한 프로그래밍 방식으로<br>더 정확하고, 더 안전하고, 더 신속하게'
-//     },
-//     {
-//         'carouselsImage': 'images/slide_devops.jpg',
-//         'carouselTitle': 'Agile x DevOps',
-//         'carouselText': 'Agile과 DevOps를 접목한 프로그래밍 방식으로<br>더 정확하고, 더 안전하고, 더 신속하게'
-//     },
-//     {
-//         'carouselsImage': 'images/slide_devops.jpg',
-//         'carouselTitle': 'Agile x DevOps',
-//         'carouselText': 'Agile과 DevOps를 접목한 프로그래밍 방식으로<br>더 정확하고, 더 안전하고, 더 신속하게'
-//     },
-//     {
-//         'carouselsImage': 'images/slide_devops.jpg',
-//         'carouselTitle': 'Agile x DevOps',
-//         'carouselText': 'Agile과 DevOps를 접목한 프로그래밍 방식으로<br>더 정확하고, 더 안전하고, 더 신속하게'
-//     },
-// ];
-// const num = {'i': 0};
-// carousels.forEach(val => {
-//     if(num.i === 0){
-//         $('.carousel-indicators').append("<li class='mr-2' data-target='#carouselExampleCaptions' data-slide-to='" + val + "' class='active'></li>");
-//         $('.carousel-inner').append(
-//             "<div class='carousel-item active'>" +
-//             "<img src='" + val.carouselsImage + "' class='d-block w-100' alt=''>" +
-//             "<div class='carousel-caption d-none d-md-block'>" +
-//             "<h1 class='text-right text-light font-weight-bold'>" + val.carouselTitle + "</h1>" +
-//             "<h2 class='text-right text-light pb-4'> " + val.carouselText + "</h2>" +
-//             "</div>" +
-//             "</div>"
-//         );
-//         num.i++;
-//     }else{
-//         $('.carousel-indicators').append("<li class='mr-2' data-target='#carouselExampleCaptions' data-slide-to='" + val + "'></li>");
-//         $('.carousel-inner').append(
-//             "<div class='carousel-item'>" +
-//             "<img src='" + val.carouselsImage + "' class='d-block w-100' alt=''>" +
-//             "<div class='carousel-caption d-none d-md-block'>" +
-//             "<h1 class='text-right text-light font-weight-bold'>" + val.carouselsImage + "</h1>" +
-//             "<h2 class='text-right text-light pb-4'> " + val.carouselsImage + "</h2>" +
-//             "</div>" +
-//             "</div>"
-//         );
-//         num.i++;
-//     }
-// });
-
 /*
-* 데이터
+* 가변 데이터
 * */
 //skill data
 const skills = [
@@ -265,15 +197,15 @@ const members = [
         'memberName': '이병준'
     },
     {
-        'memberImage': 'images/noone.svg',
+        'memberImage': 'images/kskim.jpg',
         'memberName': '김경성'
     },
     {
-        'memberImage': 'images/noone.svg',
+        'memberImage': 'images/sypark.jpg',
         'memberName': '박송이'
     },
     {
-        'memberImage': 'images/noone.svg',
+        'memberImage': 'images/jhlim.jpg',
         'memberName': '임지혜'
     },
     {
@@ -408,3 +340,54 @@ timelines.forEach(val => {
     );
 });
 
+//licence data
+const licences = [
+    {
+        'licenceTitle': 'Slide Images',
+        'licenceText':
+        '<li><a href="https://www.freepik.com/free-photos-vectors/icon">Icon vector created by fullvector - www.freepik.com</a></li>'
+    },
+    {
+        'licenceTitle': 'Icons',
+        'licenceText':
+        '<li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></li>' +
+        '<li><a href="https://material.io/resources/icons/?style=baseline">material.io</a></li>'
+    },
+    {
+        'licenceTitle': 'Layout',
+        'licenceText':
+        '<li>https://getbootstrap.com/</li>' +
+        '<li>https://getuikit.com/</li>'
+    },
+    {
+        'licenceTitle': 'Scrollbar',
+        'licenceText':
+        '<li>http://manos.malihu.gr/jquery-custom-content-scroller/</li>'
+    },
+    {
+        'licenceTitle': 'Timeline',
+        'licenceText':
+        '<li>' +
+        'Copyright (c) 2020 by Ratko Solaja (https://codepen.io/Ratko_Solaja/pen/ztxkw)<br>' +
+        'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br>' +
+        'The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br>' +
+        'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br>' +
+        '</li>'
+    },
+    {
+        'licenceTitle': 'Background Effect',
+        'licenceText':
+        '<li>' +
+        'Copyright (c) 2019 by Francesco Allegrini (https://codepen.io/francesco-allegrini/pen/jeQpaL)<br>' +
+        'Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br>' +
+        'The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br>' +
+        'HE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br>' +
+        '</li>'
+    },
+];
+licences.forEach(val => {
+    $('.licence').append(
+        "<h5>- " + val.licenceTitle + "</h5>" +
+        val.licenceText
+    );
+});

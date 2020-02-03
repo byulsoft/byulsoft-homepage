@@ -106,7 +106,7 @@ hr{width:75%; margin:auto;}
     position: fixed;
     top: 0;
     left: 0;
-    background: #343333;
+    background: /*#343333*/ rgba(52,51,51, 0.8);
     box-shadow: 0 5px 40px 0 rgba(0,0,0,0.3);
 }
 .navbar-collapse{
@@ -142,7 +142,7 @@ hr{width:75%; margin:auto;}
 /*--------about--------*/
 .about .card{box-shadow:0 0 15px rgba(0,0,0,0.3); border:none;}
 .card img{width:150px; height:150px; margin-top:20px;}
-.card:hover{cursor:pointer; transform: scale(1.1);}
+.card:hover{cursor:pointer; /*transform: scale(1.1);*/ opacity:0.8;}
 
 /*--------member--------*/
 .member{
@@ -151,7 +151,7 @@ hr{width:75%; margin:auto;}
 }
 .member .card{border:1px solid rgba(255,255,255,0.4); background:none; box-shadow: 0px 0px 12px rgba(0,0,0,0.2);}
 .member .card img{border-radius: 50%;}
-.scrl{padding-top:50px; overflow: auto;}
+/*.scrl{padding-top:50px; overflow: auto;}*/
 
 /*--------timeline--------*/
 .work{
