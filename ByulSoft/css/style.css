@@ -14,6 +14,10 @@ hr{width:75%; margin:auto;}
 @media only screen and (max-width: 1000px) {
     hr{width:100%; margin:auto;}
 }
+@media only screen and (max-width: 500px) {
+    .carousel-caption h1, .carousel-caption h2{font-size:19px;}
+    .carousel-indicators{display:none;}
+}
 
 /*--------전체 폰트용 코드--------*/
 @font-face {
@@ -57,35 +61,6 @@ hr{width:75%; margin:auto;}
     overflow: hidden;
     background:radial-gradient(ellipse at bottom, #343333 20%, #161616 100%);
 }
-.star {
-    width: 2px;
-    height: 2px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.8), 0 0 20px 0 #FFFFFF;
-    animation: glow 5s infinite;
-}
-.star--medium{
-    width: 3px;
-    height: 3px;
-}
-.star--big {
-    width: 4px;
-    height: 4px;
-    box-shadow: 0 0 40px 0 #FFFFFF, 0 0 20px 0 #FFFFFF, inset 0 0 4px #FFFFFF;
-}
-@keyframes glow {
-    0% {
-        opacity: 0.9;
-    }
-    50% {
-        opacity: 0.2;
-    }
-    100% {
-        opacity: 0.9;
-    }
-}
 
 /*--------nav-menu--------*/
 .headerFluid {
@@ -126,8 +101,8 @@ hr{width:75%; margin:auto;}
 .carousel-indicators li{width:8px; height:8px; transform: rotate(45deg);}
 .carousel-inner{max-height:1170px; overflow:hidden;}
 .carousel-item img{margin-top:-10%; opacity: 0.8; background-position:bottom;}
-.carousel-caption{top:50%;}
-.carousel-item:nth-child(3) .carousel-caption{top:30%;}
+.carousel-caption{top:30%;}
+/*.carousel-item:nth-child(3) .carousel-caption{top:30%;}*/
 
 /*--------skill carousel--------*/
 /*.uk-panel{visibility: hidden;}*/

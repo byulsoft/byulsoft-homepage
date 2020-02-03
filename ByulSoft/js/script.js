@@ -7,16 +7,10 @@ $(".logoImage").on("click", function() {
     location.reload();
 });
 
-
 //메뉴 이동
 $('.goLink').on('click', function(){
     $('html, body').stop().animate({scrollTop:$($(this).attr('href')).offset().top-50});
 });
-
-//사이트 이동
-// $('.goSite').on('click', function(){
-//     window.open("about:blank").location.href = $(this).attr('href');
-// });
 
 // up
 $('#goToTop').on('click', function() {
@@ -34,37 +28,6 @@ $(window).scroll(function() {
     } else {
         $('.menuScrollOption').removeClass('menuPosition-fixed');
     }
-});
-//아무 창이나 누르면 toggle키가 작동, 메뉴 접힘 시작 //bootstrap과 충돌남
-// $('.navbar-toggler').click(function(event){
-//     event.stopPropagation();
-//     $('#navbarNavDropdown').toggle();
-// });
-// $(document).click(function(){
-//     $('#navbarNavDropdown').hide();
-// });
-//아무 창이나 누르면 toggle키가 작동, 메뉴 접힘 끝
-
-//header star
-const wH = document.querySelector('.header').offsetHeight;
-const wW = document.querySelector('.header').offsetWidth;
-// const wH = window.innerHeight;
-// const wW = window.innerWidth;
-
-const generateStars = (n, wH, wW) => {
-    for (let i = 0; i < n; i++) {
-        const div = document.createElement('div');
-        div.className = i % 20 == 0 ? 'star star--big' : i % 9 == 0 ? 'star star--medium' : 'star';
-        // random everywhere!
-        div.setAttribute('style', `top:${Math.round(Math.random() * wH)}px;left:${Math.round(Math.random() * wW)}px;animation-duration:${Math.round(Math.random() * 3000) + 3000}ms;animation-delay:${Math.round(Math.random() * 3000)}ms;`);
-        document.body.appendChild(div);
-    }
-};
-generateStars(300, wH, wW);
-
-//when window size changed
-$( window ).resize(function() {
-    location.reload();
 });
 
 //changing background per time
@@ -132,7 +95,7 @@ skills.forEach(val => {
         "<li>" +
         "<img src='" + val.skillImage + "'alt=''>" +
         "<div class='uk-position-center uk-panel'>" +
-        "<h3 class='text-light pt-2 pb-2 pl-3 pr-3 font-weight-bold'>" + val.skillText + "</h3>" +
+        "<h3 class='text-light m-2 pt-2 pb-2 pl-3 pr-3 font-weight-bold'>" + val.skillText + "</h3>" +
         "</div>" +
         "</li>"
     );
