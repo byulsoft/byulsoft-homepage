@@ -105,13 +105,13 @@ skills.forEach(val => {
 const abouts = [
     {
         'aboutImage': 'images/idea.png', /* data: abouts 이미지 */
-        'aboutTitle': '검증된 최신 기술 개발', /* data: abouts 제목 */
-        'aboutText': 'Java, Spring 및 AngularJS, Websocket 등 최신 기술을 이용하여 짧은 기간에 고품질의 웹 서비스를 제공합니다' /* data: abouts 내용 */
+        'aboutTitle': '검증된 오픈소스 및 MSA 전문기업', /* data: abouts 제목 */
+        'aboutText': 'Java, Spring, Spring Cloud, Kafka, VueJS 등 최신 오픈소스 기술을 이용하여 짧은 기간에 고품질의 웹 서비스를 제공합니다' /* data: abouts 내용 */
     },
     {
         'aboutImage': 'images/team.png',
         'aboutTitle': '풍부한 경력의 전문가',
-        'aboutText': '전 직원이 최소 5년에서 11년까지 홈페이지, CRM, CMS 등 다양한 웹기반서비스 개발경력을 가진 전문가로 구성되어 있습니다'
+        'aboutText': '평균 7년이 넘는 경력으로 홈페이지, CRM, CMS 등 다양한 웹 기반서비스 개발경력을 가진 전문가로 구성되어 있습니다'
     },
     {
         'aboutImage': 'images/handshake.png',
@@ -197,10 +197,11 @@ members.forEach(val => {
 const timelines=[
     {
         'timelineImage': 'images/TLL.PNG', /* data: timelines 이미지 */
-        'timelineTitle': '대명리조트 TLL 연동', /* data: timelines 제목 */
+        'timelineTitle': '대명리조트 TLL 연동, 시즌락카 리뉴얼', /* data: timelines 제목 */
         'timelineText':  /* data: timelines 내용 */
             '<li>TL-Lincoln과 웹서비스로 통신하는 중계 모듈 서버 구축</li>' +
-            '<li>MSA와 Docker Swarm 을 이용한 서비스 구축 및 각 모듈 분리</li>',
+            '<li>MSA와 Docker Swarm 을 이용한 서비스 구축 및 각 모듈 분리</li>' +
+            '<li>시즌락카 1차 리뉴얼 MSA 방식으로 동시접속자 3천명 최대 응답시간 3초내 처리</li>',
         'timelineYear': '2019' /* data: timelines 연도 */
     },
     {
