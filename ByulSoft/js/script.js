@@ -211,12 +211,12 @@ const abouts = [
     {
         'aboutImage': 'images/idea.png', /* data: abouts 이미지 */
         'aboutTitle': '검증된 최신 기술 개발', /* data: abouts 제목 */
-        'aboutText': 'Java, Spring 및 AngularJS, Websocket 등 최신 기술을 이용하여 짧은 기간에 고품질의 웹 서비스를 제공합니다' /* data: abouts 내용 */
+        'aboutText': 'Java, Spring, Spring Cloud, Kafka, VueJS 등 최신 오픈소스 기술을 이용하여 짧은 기간에 고품질의 웹 서비스를 제공합니다' /* data: abouts 내용 */
     },
     {
         'aboutImage': 'images/team.png',
         'aboutTitle': '풍부한 경력의 전문가',
-        'aboutText': '전 직원이 최소 5년에서 11년까지 홈페이지, CRM, CMS 등 다양한 웹기반서비스 개발경력을 가진 전문가로 구성되어 있습니다'
+        'aboutText': '평균 7년이 넘는 경력으로 홈페이지, CRM, CMS 등 다양한 웹 기반서비스 개발경력을 가진 전문가로 구성되어 있습니다'
     },
     {
         'aboutImage': 'images/handshake.png',
