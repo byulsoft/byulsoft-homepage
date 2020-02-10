@@ -39,6 +39,8 @@ if(new Date().getHours()%2===0){
     $('.member').css('background', 'radial-gradient(ellipse at bottom, #12436f 0%, #000 100%)');
 }
 
+// window.innerWidth < 530 ? $('.socialEmo:nth-child(1)').before("<br>") : ;
+
 //copy
 const mail='psw@byulsoft.com'; /* data: 연락받을 메일 */
 const copy = $('#copy').val(mail);
@@ -51,77 +53,16 @@ $('.copy').click(function(){
 /*
 * 가변 데이터
 * */
-// carousel data //문제없으나 반응형 효과 충돌나서 안 씀
-// const carousels = [
-//     {
-//         'carouselsImage': 'images/slide_devops.jpg',
-//         'layout': 'text-right',
-//         'carouselTitle': 'Agile x DevOps',
-//         'carouselText': '진보한 개발 및 운영 방식으로<br>더 정확하고, 더 안전하고, 더 신속하게'
-//     },
-//     {
-//         'carouselsImage': 'images/slide_msa.jpg',
-//         'layout': 'text-right',
-//         'carouselTitle': 'MicroService Architecture',
-//         'carouselText': 'Netflix OSS 기반 Spring Cloud<br>기존 Monolith 시스템에 대한 쉬운 개편<br>소규모-대규모까지 모든 규모에 적합한 시스템'
-//     },
-//     {
-//         'carouselsImage': 'images/slide_front.jpg',
-//         'layout': '',
-//         'carouselTitle': 'Vue / Angular / React',
-//         'carouselText': '설계부터 구축까지<br>다양한 프론트엔드 프레임워크로 UI를 더 쓰기 쉽고 편하게'
-//     },
-//     {
-//         'carouselsImage': 'images/slide_db.jpg',
-//         'layout': 'text-left',
-//         'carouselTitle': 'SQL? NoSQL?',
-//         'carouselText': '오라클부터 몽고디비, 카산드라까지<br>데이터 구축과 통계를 한번에'
-//     },
-//     {
-//         'carouselsImage': 'images/slide_as.jpg',
-//         'layout': 'text-right',
-//         'carouselTitle': '사후관리',
-//         'carouselText': '사전관리 보다 철처한 사후관리로<br>고객 만족과 감동까지'
-//     },
-// ];
-// const num = {'i': 0};
-// carousels.forEach(val => {
-//     if(num.i === 0){
-//         $('.carousel-indicators').append("<li class='mr-2' data-target='#carouselExampleCaptions' data-slide-to='" + val + "' class='active'></li>");
-//         $('.carousel-inner').append(
-//             "<div class='carousel-item active'>" +
-//             "<img src='" + val.carouselsImage + "' class='d-block w-100' alt=''>" +
-//             "<div class='carousel-caption d-none d-md-block'>" +
-//             "<h1 class='" + val.layout + " text-light font-weight-bold'>" + val.carouselTitle + "</h1>" +
-//             "<h2 class='" + val.layout + " text-light pb-4'> " + val.carouselText + "</h2>" +
-//             "</div>" +
-//             "</div>"
-//         );
-//         num.i++;
-//     }else{
-//         $('.carousel-indicators').append("<li class='mr-2' data-target='#carouselExampleCaptions' data-slide-to='" + val + "'></li>");
-//         $('.carousel-inner').append(
-//             "<div class='carousel-item'>" +
-//             "<img src='" + val.carouselsImage + "' class='d-block w-100' alt=''>" +
-//             "<div class='carousel-caption d-none d-md-block'>" +
-//             "<h1 class='" + val.layout + " text-light font-weight-bold'>" + val.carouselTitle + "</h1>" +
-//             "<h2 class='" + val.layout + " text-light pb-4'> " + val.carouselText + "</h2>" +
-//             "</div>" +
-//             "</div>"
-//         );
-//         num.i++;
-//     }
-// });
-
+// carousel data //문제없으나 반응형 효과 충돌나서 안 씀(삭제)
 //skill data
 const skills = [
     {
         'skillImage': 'images/web.png', /* data: skills 이미지 */
-        'skillText': '웹 및 모바일앱 개발' /* data: skills 문구 */
+        'skillText': '웹 및 모바일<br>어플 개발' /* data: skills 문구 */
     },
     {
         'skillImage': 'images/chart.png',
-        'skillText': '통계 및 자산관리'
+        'skillText': '통계 및<br>자산관리'
     },
     {
         'skillImage': 'images/list.png',
@@ -133,23 +74,23 @@ const skills = [
     },
     {
         'skillImage': 'images/chat.png',
-        'skillText': '채팅 및 메신저앱'
+        'skillText': '채팅 및<br>메신저앱'
     },
     {
         'skillImage': 'images/admin.png',
-        'skillText': '관리자 페이지'
+        'skillText': '관리자<br>페이지'
     },
     {
         'skillImage': 'images/db.png',
-        'skillText': 'DB구축 및 관리'
+        'skillText': 'DB구축<br>및 관리'
     },
     {
         'skillImage': 'images/privacy.png',
-        'skillText': '정보보호와 보안'
+        'skillText': '정보보호와<br>보안'
     },
     {
         'skillImage': 'images/ticket.png',
-        'skillText': '예약 결제 시스템'
+        'skillText': '예약 결제<br>시스템'
     },
 ];
 skills.forEach(val => {
@@ -157,7 +98,7 @@ skills.forEach(val => {
         "<li>" +
         "<img src='" + val.skillImage + "'alt=''>" +
         "<div class='uk-position-center uk-panel'>" +
-        "<h3 class='text-light m-2 pt-2 pb-2 pl-3 pr-3 font-weight-bold'>" + val.skillText + "</h3>" +
+        "<h3 class='text-light text-center m-2 pt-2 pb-2 pl-3 pr-3 font-weight-bold'>" + val.skillText + "</h3>" +
         "</div>" +
         "</li>"
     );
@@ -167,7 +108,7 @@ skills.forEach(val => {
 const abouts = [
     {
         'aboutImage': 'images/idea.png', /* data: abouts 이미지 */
-        'aboutTitle': '검증된 오픈소스 및 MSA 전문기업', /* data: abouts 제목 */
+        'aboutTitle': '검증된 MSA 전문기업', /* data: abouts 제목 */
         'aboutText': 'Java, Spring, Spring Cloud, Kafka, VueJS 등 최신 오픈소스 기술을 이용하여 짧은 기간에 고품질의 웹 서비스를 제공합니다' /* data: abouts 내용 */
     },
     {
