@@ -51,6 +51,68 @@ $('.copy').click(function(){
 /*
 * 가변 데이터
 * */
+// carousel data
+const carousels = [
+    {
+        'carouselsImage': 'images/slide_devops.jpg',
+        'layout': 'text-right',
+        'carouselTitle': 'Agile x DevOps',
+        'carouselText': '진보한 개발 및 운영 방식으로<br>더 정확하고, 더 안전하고, 더 신속하게'
+    },
+    {
+        'carouselsImage': 'images/slide_msa.jpg',
+        'layout': 'text-right',
+        'carouselTitle': 'MicroService Architecture',
+        'carouselText': 'Netflix OSS 기반 Spring Cloud<br>기존 Monolith 시스템에 대한 쉬운 개편<br>소규모-대규모까지 모든 규모에 적합한 시스템'
+    },
+    {
+        'carouselsImage': 'images/slide_front.jpg',
+        'layout': '',
+        'carouselTitle': 'Vue / Angular / React',
+        'carouselText': '설계부터 구축까지<br>다양한 프론트엔드 프레임워크로 UI를 더 쓰기 쉽고 편하게'
+    },
+    {
+        'carouselsImage': 'images/slide_db.jpg',
+        'layout': 'text-left',
+        'carouselTitle': 'SQL? NoSQL?',
+        'carouselText': '오라클부터 몽고디비, 카산드라까지<br>데이터 구축과 통계를 한번에'
+    },
+    {
+        'carouselsImage': 'images/slide_as.jpg',
+        'layout': 'text-right',
+        'carouselTitle': '사후관리',
+        'carouselText': '사전관리 보다 철처한 사후관리로<br>고객 만족과 감동까지'
+    },
+];
+const num = {'i': 0};
+carousels.forEach(val => {
+    if(num.i === 0){
+        $('.carousel-indicators').append("<li class='mr-2' data-target='#carouselExampleCaptions' data-slide-to='" + val + "' class='active'></li>");
+        $('.carousel-inner').append(
+            "<div class='carousel-item active'>" +
+            "<img src='" + val.carouselsImage + "' class='d-block w-100' alt=''>" +
+            "<div class='carousel-caption d-none d-md-block'>" +
+            "<h1 class='" + val.layout + " text-light font-weight-bold'>" + val.carouselTitle + "</h1>" +
+            "<h2 class='" + val.layout + " text-light pb-4'> " + val.carouselText + "</h2>" +
+            "</div>" +
+            "</div>"
+        );
+        num.i++;
+    }else{
+        $('.carousel-indicators').append("<li class='mr-2' data-target='#carouselExampleCaptions' data-slide-to='" + val + "'></li>");
+        $('.carousel-inner').append(
+            "<div class='carousel-item'>" +
+            "<img src='" + val.carouselsImage + "' class='d-block w-100' alt=''>" +
+            "<div class='carousel-caption d-none d-md-block'>" +
+            "<h1 class='" + val.layout + " text-light font-weight-bold'>" + val.carouselTitle + "</h1>" +
+            "<h2 class='" + val.layout + " text-light pb-4'> " + val.carouselText + "</h2>" +
+            "</div>" +
+            "</div>"
+        );
+        num.i++;
+    }
+});
+
 //skill data
 const skills = [
     {
