@@ -71,6 +71,7 @@ hr{width:75%; margin:auto;}
 }
 .menuScrollOption{
     transition:height 3s, background-color 1s, transform 1s;
+    background: rgba(0,0,0,0.6);
 }
 .topMenuNavbar {
     font-size: 14px;
