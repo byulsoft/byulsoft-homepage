@@ -58,7 +58,7 @@ $('.copy').click(function(){
 const skills = [
     {
         'skillImage': 'images/web.png', /* data: skills 이미지 */
-        'skillText': '웹 및 모바일<br>어플 개발' /* data: skills 문구 */
+        'skillText': '웹/모바일<br>어플 개발' /* data: skills 문구 */
     },
     {
         'skillImage': 'images/chart.png',
@@ -86,7 +86,7 @@ const skills = [
     },
     {
         'skillImage': 'images/privacy.png',
-        'skillText': '정보보호와<br>보안'
+        'skillText': '정보보호/<br>보안'
     },
     {
         'skillImage': 'images/ticket.png',
@@ -188,7 +188,7 @@ members.forEach(val => {
                         "<img src='" + val.memberImage + "' class='card-img' alt=''>" +
                     "</div>" +
                     "<div class='card-body text-center position-absolute' style='top:30%; right:5%;'>" +
-                        "<h5 class='font-weight-bold text-light text-shadow'>" + val.memberName + "<br>Manager</h5>" +
+                        "<h5 class='font-weight-bold text-light text-shadow-bold'>" + val.memberName + "<br>Manager</h5>" +
                     "</div>" +
                 "</div>" +
             "</div>" +

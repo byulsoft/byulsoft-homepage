@@ -20,6 +20,18 @@ hr{width:75%; margin:auto;}
     .carousel-indicators{display:none;}
     .carousel-item:nth-child(3) .carousel-caption{margin-top:-1%;}
 }
+@media only screen and (max-width: 320px) {
+    .carousel-caption{margin-top:-20%;}
+    .carousel-caption h1, .carousel-caption h2{font-size:13px;}
+    .carousel-indicators{display:none;}
+    .menuScrollOption{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: /*#343333*/ rgba(52,51,51, 0.8);
+        box-shadow: 0 5px 40px 0 rgba(0,0,0,0.3);
+    }
+}
 
 /*--------전체 폰트용 코드--------*/
 @font-face {
@@ -98,13 +110,17 @@ hr{width:75%; margin:auto;}
 .text-shadow {
     text-shadow: 0px 0px 9px rgba(0,0,0,0.2);
 }
+.text-shadow-bold {
+    text-shadow: -2px 2px 0px #1d4263;
+ }
 
 /*--------carouesel--------*/
 .slider-start{margin-top:70px;}
 .carousel-indicators li{width:8px; height:8px; transform: rotate(45deg);}
 .carousel-inner{max-height:1170px; overflow:hidden;}
 .carousel-item img{margin-top:-10%; opacity: 0.8; background-position:bottom;}
-.carousel-caption{top:50%;}
+.carousel-caption{top:60%;}
+.carousel-caption h1, h2{line-height:150%; margin:10px;}
 .carousel-item:nth-child(3) .carousel-caption{top:30%;}
 
 /*--------skill carousel--------*/
@@ -115,12 +131,12 @@ hr{width:75%; margin:auto;}
     opacity:0.7;
 }
 .uk-slider-items li:hover{cursor:pointer; background:#f9f9f9;}
-.uk-position-center h3{background:rgba(0,0,0,0.3); border-radius:15px; text-shadow:0px 0px 15px #000; font-weight: bold; letter-spacing:2px;}
+.uk-position-center h3{background:rgba(0,0,0,0.3); border-radius:15px; text-shadow:0px 0px 15px #000; font-weight: bold; letter-spacing:1px;}
 
 /*--------about--------*/
 .about .card{box-shadow:0 0 15px rgba(0,0,0,0.3); border:none;}
 .card img{width:150px; height:150px; margin-top:20px;}
-.card:hover{cursor:pointer; /*transform: scale(1.1);*/ opacity:0.8;}
+.card:hover{cursor:pointer; transform: scale(1.02);}
 
 /*--------member--------*/
 .member{
@@ -129,7 +145,6 @@ hr{width:75%; margin:auto;}
 }
 .member .card{border:1px solid rgba(255,255,255,0.4); background:none; box-shadow: 0px 0px 12px rgba(0,0,0,0.2);}
 .member .card img{border-radius: 50%;}
-/*.scrl{padding-top:50px; overflow: auto;}*/
 
 /*--------timeline--------*/
 .work{
