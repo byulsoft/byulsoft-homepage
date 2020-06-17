@@ -256,7 +256,7 @@ const timelines=[
     },
     {
         'timelineImage': 'images/비발디.png',
-        'timelineTitle': '비발디 파크 등 홈패이지 개발',
+        'timelineTitle': '비발디 파크 등 홈이지 개발',
         'timelineText':
             '<li>총 6개월에 걸쳐 개발</li>' +
             '<li>비발디파크, 소노펠리체, 대명회원권분양, 대명그룹 관리자와 홈페이지 개발</li>',
