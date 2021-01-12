@@ -117,8 +117,8 @@ hr{width:75%; margin:auto;}
 /*--------carouesel--------*/
 .slider-start{margin-top:70px;}
 .carousel-indicators li{width:8px; height:8px; transform: rotate(45deg);}
-.carousel-inner{max-height:1170px; overflow:hidden;}
-.carousel-item img{margin-top:-10%; opacity: 0.8; background-position:bottom;}
+.carousel-inner{max-height: 90vh; overflow:hidden;}
+.carousel-item img{max-height: 100vh; opacity: 0.8; background-position:bottom;}
 .carousel-caption{top:60%;}
 .carousel-caption h1, h2{line-height:150%; margin:10px;}
 .carousel-item:nth-child(3) .carousel-caption{top:30%;}

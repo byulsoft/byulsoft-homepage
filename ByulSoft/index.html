@@ -237,14 +237,33 @@
             <!--            contact(상담신청, 이력서 첨부)-->
             <h2 class="pb-1 pt-5 mt-5 font-weight-bold">별소프트에 대해 궁금한 것들을 물어보세요</h2><hr>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-4 my">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2 my">
             <h4 class="pt-1 text-info font-weight-bold">찾아오시는 길</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.8627396748025!2d127.11621721515189!3d37.4875653364048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca58cd2b58e57%3A0x87d97b4006d00f35!2z64yA66qF7YOA7JuM!5e0!3m2!1sko!2skr!4v1577285184236!5m2!1sko!2skr" frameborder="0" style=" width:100%; max-width:950px; height:400px; border:0;" allowfullscreen=""></iframe>
-            <br><br>
-            <span class="p-1 h3 text-info font-weight-bold">Location:</span>
-            <span class="p-1 text-info font-weight-bold">서울특별시 송파구 문정동 150-16 대명타워 4층(현재 근무지)</span>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.8627396748025!2d127.11621721515189!3d37.4875653364048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca58cd2b58e57%3A0x87d97b4006d00f35!2z64yA66qF7YOA7JuM!5e0!3m2!1sko!2skr!4v1577285184236!5m2!1sko!2skr" frameborder="0" style=" width:100%; max-width:950px; height:400px; border:0;" allowfullscreen=""></iframe> -->
+            <!-- daum 약도 -->
+            <div style=" width:100%; max-width:950px; height:400px; border:0; margin:auto;" allowfullscreen="" id="daumRoughmapContainer1610422224233" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1610422224233",
+                    "key" : "23uno",
+                    "mapWidth" : "950px",
+                    "mapHeight" : "400"
+                }).render();
+            </script>
+            <!-- .daum 약도 끝-->
+
+        <div class="d-flex justify-content-center mt-4">
+            <p style="text-align: left;">
+                    <span class="p-1 h3 text-info font-weight-bold">Location:</span>
+                    <span class="p-1 text-info font-weight-bold">서울특별시 성동구 성수일로77, 1505호(현재 근무지)</span>
+            <br>
+                    <span class="p-1 h3 text-info font-weight-bold">Contact:</span>
+                    <span class="p-1 text-info font-weight-bold">02-2088-5630</span>
+            </p>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 my">
+                </div>
+        <div class="mt-0 col-lg-12 col-md-12 col-sm-12 col-xs-12 my">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary btn-lg m-2" data-toggle="modal" data-target="#exampleModal">
                 서비스 문의 및 상담신청
@@ -305,19 +324,19 @@
             <span class="buttomLogo pr-2">
                 <a class="goLink" href="#about"><img src="images/logo.png" width="140" height="30"></a>
             </span>
-            <span class="mr-1 socialEmo" data-toggle="tooltip" data-placement="top" title="staff only"><a><img src="images/msg.svg" width="23" height="23"></a></span>
+            <!-- <span class="mr-1 socialEmo" data-toggle="tooltip" data-placement="top" title="staff only"><a><img src="images/msg.svg" width="23" height="23"></a></span>
             <span class="mr-1 socialEmo" data-toggle="tooltip" data-placement="top" title="preparing.."><a><img src="images/youtube.svg" width="23" height="23"></a></span>
             <span class="mr-1 socialEmo" data-toggle="tooltip" data-placement="top" title="staff only"><a><img src="images/gitlab.png" width="23" height="23"></a></span>
-            <span class="socialEmo" data-toggle="tooltip" data-placement="top" title="preparing.."><a><img src="images/facebook.svg" width="23" height="23"></a></span>
+            <span class="socialEmo" data-toggle="tooltip" data-placement="top" title="preparing.."><a><img src="images/facebook.svg" width="23" height="23"></a></span> -->
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footerEnd my">
-            <span><a class="goLink mb-2" href="#member">조직</a></span>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3 footerEnd my">
+            <!-- <span><a class="goLink mb-2" href="#member">조직</a></span>
             <span><a class="goLink mb-2" href="#work">연혁</a></span>
             <span><a class="goLink mb-2" href="#contact">문의하기</a></span>
-            <span><a class="goLink mb-2" data-toggle="modal" data-target="#exampleModalScrollable">고객지원</a></span>
+            <span><a class="goLink mb-2" data-toggle="modal" data-target="#exampleModalScrollable">고객지원</a></span> -->
             <li>상호: 주식회사 별소프트 | 대표: 박성완 | 기술지원안내 및 제품문의 : psw@byulsoft.com | 사업자등록번호:374-86-01428</li>
             <li>
-                본사: 서울특별시 금천구 가산디지털2로 98 (가산동 550-1) 롯데IT캐슬 2-1107 별소프트
+                본사: 서울특별시 성동구 성수일로77 (성수동1가 13-164) 서울숲 IT 밸리 1505호 별소프트
             </li>
         </div>
     </div>
@@ -327,7 +346,6 @@
         <h6 class="m-0 p-2 text-light">Copyright ⓒ 2019 Byulsoft. Corp. All Rights Reserved.</h6>
     </div>
 </div>
-
 <!--javascript-->
 <script src="js/script.js"></script>
 </body>

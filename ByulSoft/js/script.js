@@ -147,7 +147,7 @@ const members = [
         'memberName': '김연아'
     },
     {
-        'memberImage': 'images/ksjang.jpg',
+        'memberImage': 'images/장경순.jpg',
         'memberName': '장경순'
     },
     {
@@ -166,10 +166,10 @@ const members = [
         'memberImage': 'images/kskim.jpg',
         'memberName': '김경성'
     },
-    {
-        'memberImage': 'images/sypark.jpg',
-        'memberName': '박송이'
-    },
+    // {
+    //     'memberImage': 'images/sypark.jpg',
+    //     'memberName': '박송이'
+    // },
     {
         'memberImage': 'images/jhlim.jpg',
         'memberName': '임지혜'
@@ -177,6 +177,14 @@ const members = [
     {
         'memberImage': 'images/김상현.jpg',
         'memberName': '김상현'
+    },
+    {
+        'memberImage': 'images/윤혜영.jpg',
+        'memberName': '윤혜영'
+    },
+    {
+        'memberImage': 'images/정수민.jpg',
+        'memberName': '정수민'
     },
 ];
 members.forEach(val => {
@@ -198,6 +206,16 @@ members.forEach(val => {
 
 //timeline data
 const timelines=[
+    {
+        'timelineImage': 'images/RMS.PNG', /* data: timelines 이미지 */
+        'timelineTitle': '소노호텔앤리조트 RMS 구축,  Naver, 인터파크등 API 연동', /* data: timelines 제목 */
+        'timelineText':  /* data: timelines 내용 */
+            '<li>기존 BAR요금 체계의 단점을 극복한 리조트 특화 레벨 요금변경 시스템 구축</li>' +
+            '<li>Naver, 인터파크 등 실시간 예약 및 상품관리, 재고관리 API 연동 구축</li>' +
+            '<li>BI 수준의 특화 통계 페이지와 경영일보, 실시간 30분단위 통계 시스템 구축</li>' +
+            '<li>MSA 방식으로 적은 서버 댓수로 대용량 처리 시스템 구축</li>',
+        'timelineYear': '2020' /* data: timelines 연도 */
+    },
     {
         'timelineImage': 'images/TLL.PNG', /* data: timelines 이미지 */
         'timelineTitle': '대명리조트 TLL 연동, 시즌락카 리뉴얼', /* data: timelines 제목 */
