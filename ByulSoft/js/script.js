@@ -207,7 +207,7 @@ members.forEach(val => {
 //timeline data
 const timelines=[
     {
-        'timelineImage': 'images/RMS.PNG', /* data: timelines 이미지 */
+        'timelineImage': 'images/RMS.png', /* data: timelines 이미지 */
         'timelineTitle': '소노호텔앤리조트 RMS 구축,  Naver, 인터파크등 API 연동', /* data: timelines 제목 */
         'timelineText':  /* data: timelines 내용 */
             '<li>기존 BAR요금 체계의 단점을 극복한 리조트 특화 레벨 요금변경 시스템 구축</li>' +
