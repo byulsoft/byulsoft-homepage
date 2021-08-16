@@ -139,52 +139,52 @@ abouts.forEach(val => {
 //member data
 const members = [
     {
-        'memberImage': 'images/janghs.jpg', /* data: members 이미지 */
+        'memberImage': 'images/member/janghs.jpg', /* data: members 이미지 */
         'memberName': '장현석' /* data: members 이름 */
     },
     {
-        'memberImage': 'images/javain82.jpg',
+        'memberImage': 'images/member/javain82.jpg',
         'memberName': '김연아'
     },
     {
-        'memberImage': 'images/장경순.jpg',
+        'memberImage': 'images/member/ksjang.jpg',
         'memberName': '장경순'
     },
     {
-        'memberImage': 'images/shjin.jpg',
+        'memberImage': 'images/member/jshyun9.jpg',
         'memberName': '진성현'
     },
     {
-        'memberImage': 'images/tshan.jpg',
+        'memberImage': 'images/member/tshan.jpg',
         'memberName': '한태식'
     },
     {
-        'memberImage': 'images/realbbeng.jpg',
+        'memberImage': 'images/member/realbbeng.jpg',
         'memberName': '이병준'
     },
     {
-        'memberImage': 'images/kskim.jpg',
+        'memberImage': 'images/member/nicky0419.jpg',
         'memberName': '김경성'
     },
-    // {
-    //     'memberImage': 'images/sypark.jpg',
-    //     'memberName': '박송이'
-    // },
     {
-        'memberImage': 'images/jhlim.jpg',
+        'memberImage': 'images/member/jyebe9034.jpg',
         'memberName': '임지혜'
     },
     {
-        'memberImage': 'images/김상현.jpg',
+        'memberImage': 'images/member/ksh9891.jpg',
         'memberName': '김상현'
     },
     {
-        'memberImage': 'images/윤혜영.jpg',
+        'memberImage': 'images/member/nmji101.jpg',
         'memberName': '윤혜영'
     },
     {
-        'memberImage': 'images/정수민.jpg',
+        'memberImage': 'images/member/doli061214.jpg',
         'memberName': '정수민'
+    },
+    {
+        'memberImage': 'images/member/jongmin4943.jpg',
+        'memberName': '윤종민'
     },
 ];
 members.forEach(val => {
@@ -207,7 +207,7 @@ members.forEach(val => {
 //timeline data
 const timelines=[
     {
-        'timelineImage': 'images/RMS.png', /* data: timelines 이미지 */
+        'timelineImage': 'images/timeline/rms.jpg', /* data: timelines 이미지 */
         'timelineTitle': '소노호텔앤리조트 RMS 구축,  Naver, 인터파크등 API 연동', /* data: timelines 제목 */
         'timelineText':  /* data: timelines 내용 */
             '<li>기존 BAR요금 체계의 단점을 극복한 리조트 특화 레벨 요금변경 시스템 구축</li>' +
@@ -217,7 +217,7 @@ const timelines=[
         'timelineYear': '2020' /* data: timelines 연도 */
     },
     {
-        'timelineImage': 'images/TLL.PNG', /* data: timelines 이미지 */
+        'timelineImage': 'images/timeline/tll.jpg', /* data: timelines 이미지 */
         'timelineTitle': '대명리조트 TLL 연동, 시즌락카 리뉴얼', /* data: timelines 제목 */
         'timelineText':  /* data: timelines 내용 */
             '<li>TL-Lincoln과 웹서비스로 통신하는 중계 모듈 서버 구축</li>' +
@@ -226,14 +226,14 @@ const timelines=[
         'timelineYear': '2019' /* data: timelines 연도 */
     },
     {
-        'timelineImage': 'images/휘닉스파크.png', /* data: timelines 이미지 */
+        'timelineImage': 'images/timeline/phoenix.jpg', /* data: timelines 이미지 */
         'timelineTitle': '휘닉스파크', /* data: timelines 제목 */
         'timelineText':  /* data: timelines 내용 */
             '<li>휘닉스 파크 홈페이지 및 관리자 리뉴얼</li>',
         'timelineYear': '2018' /* data: timelines 연도 */
     },
     {
-        'timelineImage': 'images/성모병원.png',
+        'timelineImage': 'images/timeline/cmc.jpg',
         'timelineTitle': 'CMC, 쥬비스 CRM 대시보드, ERP',
         'timelineText':
             '<li>CMC 성모병원 7개 사이트와 관리자 통합 구축</li>' +
@@ -243,7 +243,7 @@ const timelines=[
         'timelineYear': '2017'
     },
     {
-        'timelineImage': 'images/쥬비스.png',
+        'timelineImage': 'images/timeline/juvis.jpg',
         'timelineTitle': '다이어트 전문기업 쥬비스에서 예약현황판 및 CRM 개발',
         'timelineText':
             '<li>웹소켓을 이용한 실시간 고객응대 시스템 및 해당 관리자 개발</li>' +
@@ -253,7 +253,7 @@ const timelines=[
         'timelineYear': '2016'
     },
     {
-        'timelineImage': 'images/본웨딩.jpg',
+        'timelineImage': 'images/timeline/dm-bw.jpg',
         'timelineTitle': '대명 본 웨딩 및 CRM 개발',
         'timelineText':
             '<li>총 7개월에 걸쳐 개발</li>' +
@@ -263,7 +263,7 @@ const timelines=[
         'timelineYear': '2015'
     },
     {
-        'timelineImage': 'images/스마트CS.png',
+        'timelineImage': 'images/timeline/dm-cs.jpg',
         'timelineTitle': '대명 CS Portal 개발',
         'timelineText':
             '<li>총 5개월에 걸쳐 개발</li>' +
@@ -273,25 +273,25 @@ const timelines=[
         'timelineYear': '2015'
     },
     {
-        'timelineImage': 'images/비발디.png',
-        'timelineTitle': '비발디 파크 등 홈이지 개발',
+        'timelineImage': 'images/timeline/vivaldi.jpg',
+        'timelineTitle': '비발디파크 등 홈이지 개발',
         'timelineText':
             '<li>총 6개월에 걸쳐 개발</li>' +
             '<li>비발디파크, 소노펠리체, 대명회원권분양, 대명그룹 관리자와 홈페이지 개발</li>',
         'timelineYear': '2014'
     },
     {
-        'timelineImage': 'images/서울아산병원.png',
+        'timelineImage': 'images/timeline/amc.jpg',
         'timelineTitle': '서울아산병원 홈페이지 개발',
         'timelineText':
             '<li>총 11개월에 걸쳐 개발</li>' +
-            '<li>jquery, bootstrap 기반 개발(관리자)</li>' +
+            '<li>jQuery, Bootstrap 기반 개발(관리자)</li>' +
             '<li>자동 홈페이지 생성 툴 개발(홈빌더)</li>' +
             '<li>동적 이벤트 생성 및 관리 프로그램, 이미지 관리, 권한별 다운로드 제한 기능 개발(학술관리)</li>',
         'timelineYear': '2014'
     },
     {
-        'timelineImage': 'images/대명골프.png',
+        'timelineImage': 'images/timeline/dm-golf.jpg',
         'timelineTitle': '대명 골프클럽 시스템 개발',
         'timelineText':
             '<li>총 6개월에 걸쳐 개발</li>' +
