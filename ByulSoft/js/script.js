@@ -163,10 +163,6 @@ const members = [
         'memberName': '이병준'
     },
     {
-        'memberImage': 'images/member/nicky0419.jpg',
-        'memberName': '김경성'
-    },
-    {
         'memberImage': 'images/member/jyebe9034.jpg',
         'memberName': '임지혜'
     },
