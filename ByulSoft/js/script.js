@@ -186,6 +186,10 @@ const members = [
         'memberImage': 'images/member/friendship.jpg',
         'memberName': '양우정'
     },
+    {
+        'memberImage': 'images/member/hrs.jpg',
+        'memberName': '황륜수'
+    },
 ];
 members.forEach(val => {
     $('.memberData').append(
