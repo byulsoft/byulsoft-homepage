@@ -147,10 +147,6 @@ const members = [
         'memberName': '김연아'
     },
     {
-        'memberImage': 'images/member/ksjang.jpg',
-        'memberName': '장경순'
-    },
-    {
         'memberImage': 'images/member/jshyun9.jpg',
         'memberName': '진성현'
     },
@@ -278,7 +274,7 @@ const timelines=[
     },
     {
         'timelineImage': 'images/timeline/vivaldi.jpg',
-        'timelineTitle': '비발디파크 등 홈이지 개발',
+        'timelineTitle': '비발디파크 등 홈페이지 개발',
         'timelineText':
             '<li>총 6개월에 걸쳐 개발</li>' +
             '<li>비발디파크, 소노펠리체, 대명회원권분양, 대명그룹 관리자와 홈페이지 개발</li>',
